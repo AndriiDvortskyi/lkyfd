@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://paris-life.info/wp-content/uploads/2016/11/Disneyland_Paris.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      width: 100%; 
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button.registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button.registerbtn:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <form action="action_page.php">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Wypełnij ten formularz, aby utworzyć konto.</p>
+      <hr>
+
+      <label for="Imię"><b>Imię</b></label>
+      <input type="text" placeholder="Wejść Imię" name="Imię" required>
+
+      <label for="psw"><b>Nazwisko</b></label>
+      <input type="password" placeholder="Wejść Nazwisko" name="psw" required>
+
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="Wejść E-mail" name="email" required>
+
+      <label for="wiek"><b>Wiek</b></label>
+      <input type="text" placeholder="Wejść Wiek" name="wiek" required>
+
+      <label for="gender"><b>Wybór Płci</b></label>
+      <select name="gender" id="gender" required>
+        <option value="Mężczyzna">Mężczyzna</option>
+        <option value="Kobieta">Kobieta</option>
+      </select>
+
+      <label for="posilek"><b>Wybór posiłku:</b></label>
+      <select name="posilek" id="posilek" required>
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="hot dog">Hot dog</option>
+        <option value="shawarma">Shawarma</option>
+      </select>
+
+      <label for="atrakcji"><b>Wybór atrakcji:</b></label>
+      <select name="atrakcji" id="atrakcji" required>
+        <option value="Hyperion">Hyperion</option>
+        <option value="Zadra">Zadra</option>
+        <option value="Mayan">Mayan</option>
+        <option value="Abyssus">Abyssus</option>
+      </select>
+
+      <hr>
+
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </form>
+</body>
+</html>
